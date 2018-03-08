@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'my-cheat-sheet-book-for-developing'
+project = 'notes'
 copyright = '2018, Axel Juraske'
 author = 'Axel Juraske'
 
@@ -114,7 +114,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'my-cheat-sheet-book-for-developingdoc'
+htmlhelp_basename = 'Notes'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -141,7 +141,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'my-cheat-sheet-book-for-developing.tex', 'my-cheat-sheet-book-for-developing Documentation',
+    (master_doc, 'notes.tex', 'notes Documentation',
      'Axel Juraske', 'manual'),
 ]
 
@@ -151,7 +151,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'my-cheat-sheet-book-for-developing', 'my-cheat-sheet-book-for-developing Documentation',
+    (master_doc, 'notes', 'notes Documentation',
      [author], 1)
 ]
 
@@ -162,8 +162,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'my-cheat-sheet-book-for-developing', 'my-cheat-sheet-book-for-developing Documentation',
-     author, 'my-cheat-sheet-book-for-developing', 'One line description of project.',
+    (master_doc, 'notes', 'notes Documentation',
+     author, 'notes', 'One line description of project.',
      'Miscellaneous'),
 ]
 

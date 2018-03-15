@@ -1,6 +1,10 @@
 Misc
 ====
 
+Python
+------
+Create a packege https://python-packaging.readthedocs.io/en/latest/everything.html
+
 Raspberry Pi
 ------------
 .. code-block:: console

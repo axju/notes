@@ -1,11 +1,16 @@
 Django
 ======
 
-Install
--------
+Setup virtual environments
+--------------------------
 .. code-block:: console
 
-  pip3 install django
+  cd mysite
+  python3 -m venv venv
+  venv/bin/active
+  source myvenv/bin/activate
+  pip install django
+
 
 Create new project
 ------------------
@@ -14,15 +19,69 @@ Create new project
   django-admin startproject mysite
 
 
-Setup virtual environments
---------------------------
+Useful
+------
+
+Internationalization
+~~~~~~~~~~~~~~~~~~~~
+
+http://www.marinamele.com/taskbuster-django-tutorial/internationalization-localization-languages-time-zones
+
+https://docs.djangoproject.com/en/2.0/topics/i18n/translation/
+
+.. code-block:: python
+
+  python manage.py makemessages -l de
+  python manage.py compilemessages -l de
+
+
+python-decouple
+~~~~~~~~~~~~~~~
+Use the decouple package for saving secret settings.
+
+install:
+
 .. code-block:: console
 
-  cd mysite
-  python3 -m venv myvenv
-  myvenv/Scripts/active
-  source myvenv/bin/activate
-  pip install django
+  pip install python-decouple
+
+in your settings.py:
+
+.. code-block:: python
+
+  from decouple import config
+
+  SECRET_KEY = config('SECRET_KEY')
+
+create file .env with:
+
+.. code-block:: python
+
+  SECRET_KEY=value
+
+
+dj-database-url
+~~~~~~~~~~~~~~~
+The dj-database-url help to configuret the db-settings in one line.
+
+install:
+
+.. code-block:: console
+
+  pip install dj-database-url
+
+in your settings.py:
+
+.. code-block:: python
+
+  import dj_database_url
+
+  DATABASES = {
+      'default': dj_database_url.config(
+          default='sqlite:///db.sqlite3'
+      )
+  }
+
 
 
 

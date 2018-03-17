@@ -3,7 +3,14 @@ Misc
 
 Python
 ------
-Create a packege https://python-packaging.readthedocs.io/en/latest/everything.html
+Create a packege
+~~~~~~~~~~~~~~~~
+`python-packaging <https://python-packaging.readthedocs.io/en/latest/minimal.html>`_
+
+`the-hitchhikers-guide-to-packaging <https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/quickstart.html>`_
+
+
+
 
 Raspberry Pi
 ------------

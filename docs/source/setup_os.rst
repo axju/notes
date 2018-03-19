@@ -120,6 +120,7 @@ Basci tools and libs
   sudo apt install -y libssl-dev libffi-dev
   sudo apt install -y libxvidcore4 libfaac0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-plugins-bad gstreamer1.0-alsa gstreamer1.0-fluendo-mp3 gstreamer1.0-libav
   sudo apt install -y libreoffice libreoffice-l10n-de libreoffice-help-de
+  sudo apt-get install hunspell hunspell-tools
   sudo apt install -y blender keepassx tree git vlc filezilla gimp gnome-disk-utility
   sudo apt install -y texlive texlive-lang-german texlive-latex-extra texmaker
   sudo apt install -y nmap
@@ -136,6 +137,8 @@ Copy folder ~/.thunderbird/
 
 Python
 ------
+twine for uploading packages
+
 .. code-block:: console
 
   sudo apt install -y python3-dev python3-pip python3-venv

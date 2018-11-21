@@ -13,6 +13,7 @@ My Notes
    misc
    setup_os
    django
+   server
 
 
 
